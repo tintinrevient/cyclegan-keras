@@ -5,6 +5,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
+# Settings
+# MacOs: python-3.6 + tensorflow-2.4.0
+# HPC: python-3.7 + tensorflow-gpu-2.3.0 + cudatoolkit-10.1 + cudnn-7.6
+
 cat_dir = os.path.join('data', 'cat')
 
 dataset = keras.preprocessing.image_dataset_from_directory(
