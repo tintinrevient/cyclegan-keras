@@ -16,7 +16,7 @@ import os
 #   pass
 
 # Option 2 works!
-os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+# os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 # Settings
 # MacOs: python-3.6 + tensorflow-2.4.0
