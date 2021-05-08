@@ -5,6 +5,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
+# Omen settings!!!
+# Option 1 - OOM issue!
+# physical_devices = tf.config.list_physical_devices('GPU')
+# try:
+#   tf.config.experimental.set_memory_growth(physical_devices[0], True)
+#   assert tf.config.experimental.get_memory_growth(physical_devices[0])
+# except:
+#   # Invalid device or cannot modify virtual devices once initialized.
+#   pass
+
+# Option 2 works!
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+
 # Settings
 # MacOs: python-3.6 + tensorflow-2.4.0
 # HPC: python-3.7 + tensorflow-gpu-2.3.0 + cudatoolkit-10.1 + cudnn-7.6

@@ -4,9 +4,15 @@
 
 ```bash
 conda install -c anaconda cudatoolkit=10.1
+conda install -c anaconda cudnn=7.6
 
 conda install -c pytorch pytorch torchvision torchaudio cudatoolkit=10.2 
 ```
+
+## Issues
+
+* https://github.com/tensorflow/tensorflow/issues/24496
+* https://www.tensorflow.org/api_docs/python/tf/config/experimental/get_memory_growth
 
 ## References
 * https://keras.io/examples/generative/wgan_gp/
